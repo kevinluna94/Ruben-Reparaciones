@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubén Peralta · Todo en reparaciones del hogar en Santa Rosa</title>
+    <meta name="description" content="Rubén Peralta, profesional con 18 años de experiencia en plomería, albañilería, pintura y más. Disponible en Santa Rosa, La Pampa. Presupuesto sin cargo.">
+    <meta name="keywords" content="reparaciones del hogar, plomero, albañil, pintor, arreglos en casa, Santa Rosa, La Pampa">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar mejorado: una sola línea, icono visible, fondo sólido al inicio -->
+<header class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <div class="container">
+        <a class="navbar-brand text-white fw-bold fs-3 d-flex align-items-center" href="#">
+            
+            <!-- LOGO -->
+            <img src="imagenes/Ruben Reparaciones.png" alt="Logo Rubén Peralta"
+                 class="me-2"
+                 style="height:80px; width:auto;">
+
+            <!-- ICONO + TEXTO -->
+            Rubén <span class="text-danger">Peralta</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-nowrap">
+                <li class="nav-item"><a class="nav-link mx-2" href="#hero">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link mx-2" href="#sobremi">Sobre Mí</a></li>
+                <li class="nav-item"><a class="nav-link mx-2" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link mx-2" href="#galeria">Galería</a></li>
+                <li class="nav-item"><a class="nav-link mx-2" href="#ubicacion">Ubicación</a></li>
+                <li class="nav-item"><a class="nav-link mx-2" href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center ms-lg-3 flex-nowrap">
+                <a href="https://www.instagram.com/rubenperalta2862?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                   target="_blank"
+                   class="text-white mx-2 custom-social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/5492954527994"
+                   target="_blank"
+                   class="btn btn-danger text-white px-3 py-2 custom-btn-zoom">
+                    <i class="fab fa-whatsapp me-1"></i> Presupuesto
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Hero con Video de fondo (full screen) - AHORA CON CARRUSEL DE VIDEOS -->
+    <section id="hero" class="d-flex align-items-center text-white text-center">
+        <!-- Video con ID para manipular desde JS -->
+        <video autoplay muted loop playsinline preload="auto" id="hero-video" class="hero-video" poster="imagenes/image.png">
+            <!-- La primera fuente se carga inicialmente; luego JS cambiará las siguientes -->
+            <source src="https://cdn.pixabay.com/video/2021/03/09/67461-522170649_large.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        
+        <!-- Overlay oscuro -->
+        <div class="hero-overlay"></div>
+
+        <div class="container position-relative z-3" style="padding-top: 70px;">
+            <div class="row justify-content-center animate__animated animate__fadeIn">
+                <div class="col-lg-10">
+                    <h1 class="display-1 fw-bolder mb-3 text-shadow">Rubén Peralta</h1>
+                    <p class="display-4 mb-3 text-danger fw-bold">Todo en Reparaciones del Hogar</p>
+                    <p class="lead fs-3 mb-4">Albañilería · Pintura · Techos · Soldadura · Cloacas </p>
+                    <p class="fs-4 mb-5">Santa Rosa, La Pampa</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                        <a href="https://wa.me/5492954527994?text=Hola%20Rub%C3%A9n%2C%20%C2%BFc%C3%B3mo%20est%C3%A1s%3F%20Tengo%20un%20peque%C3%B1o%20problema%20en%20mi%20casa%20y%20me%20gustar%C3%ADa%20consultarte.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" target="_blank" class="btn btn-danger btn-lg shadow-lg custom-btn-zoom px-4 py-3">
+                            <i class="fab fa-whatsapp me-2"></i> Solicitar Presupuesto GRATIS
+                        </a>
+                        <a href="#servicios" class="btn btn-outline-light btn-lg shadow-lg custom-btn-zoom px-4 py-3">
+                            <i class="fas fa-tools me-2"></i> Ver Servicios
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <a href="#sobremi" class="text-white">
+                <i class="fas fa-chevron-down fa-2x animate__animated animate__bounce animate__infinite"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre Mí (en primera persona) -->
+    <section id="sobremi" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start animate__animated animate__fadeInLeft">
+                    <h2 class="display-5 fw-bold mb-3 text-danger section-title">Sobre Rubén Peralta</h2>
+                    <p class="lead fw-bold">18 Años de Experiencia Comprobable en Santa Rosa.</p>
+                    <p class="fs-5">
+                        Me especializo en ofrecer <span class="text-danger fw-bold">soluciones integrales y rápidas</span> para las necesidades cotidianas del hogar. Desde una gotera molesta hasta una pared que necesita pintura o una cloaca tapada, mi enfoque es dar una respuesta eficiente y confiable.
+                    </p>
+                    <p class="fw-bold">
+                        Mi compromiso es la calidad en trabajos pequeños y grandes, asegurando tu tranquilidad. ¡Consultá tu presupuesto sin cargo!
+                    </p>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-circle text-danger fa-2x me-3"></i>
+                            <span class="fs-5">Trabajo garantizado</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-circle text-danger fa-2x me-3"></i>
+                            <span class="fs-5">Materiales de primera calidad</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-danger fa-2x me-3"></i>
+                            <span class="fs-5">Atención personalizada y puntual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 text-center animate__animated animate__fadeInRight">
+                    <div class="position-relative">
+                        <img src="imagenes/Foto-perfil.png" class="img-fluid rounded shadow-lg" alt="Rubén Peralta - Profesional de reparaciones">
+                        <div class="experience-badge">
+                            <div class="badge-content">
+                                <span class="years">18+</span>
+                                <span class="text">Años de<br>Experiencia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios (en primera persona: "Servicios que ofrezco") -->
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold section-title animate__animated animate__fadeInUp">Servicios que ofrezco</h2>
+            <p class="text-center fs-5 mb-5">Soluciones eficientes para todas las necesidades de mantenimiento y reparación de tu hogar.</p>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Servicio 1 -->
+                <div class="col service-item animate__animated animate__fadeInUp" data-delay="100">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-hover-effect">
+                        <div class="card-body">
+                            <div class="service-icon-container mb-3">
+                                <i class="fas fa-faucet fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Arreglos de Grifería</h5>
+                            <p class="card-text">Reparación y reemplazo de grifos, pérdidas de agua y solución a problemas de plomería menores.</p>
+                            <a href="https://wa.me/5492954527994?text=Hola%20Rub%C3%A9n%2C%20tengo%20un%20problema%20con%20los%20grifos%20de%20mi%20casa.%20%C2%BFPodr%C3%ADas%20venir%20a%20revisarlos%3F" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="col service-item animate__animated animate__fadeInUp" data-delay="200">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-hover-effect">
+                        <div class="card-body">
+                            <div class="service-icon-container mb-3">
+                                <i class="fas fa-toilet fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Cloacas y Destapaciones</h5>
+                            <p class="card-text">Servicio rápido y efectivo para desatascar cloacas, desagües y tuberías de forma profesional.</p>
+                            <a href="https://wa.me/5492954527994?text=Hola%20Rub%C3%A9n%2C%20tengo%20la%20cloaca%20tapada%20y%20no%20s%C3%A9%20c%C3%B3mo%20solucionarlo.%20%C2%BFVos%20hac%C3%A9s%20destapaciones%3F" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="col service-item animate__animated animate__fadeInUp" data-delay="300">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-hover-effect">
+                        <div class="card-body">
+                            <div class="service-icon-container mb-3">
+                                <i class="fas fa-hard-hat fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Albañilería y Pequeñas Obras</h5>
+                            <p class="card-text">Pequeños trabajos de albañilería, reparaciones de revoque, pisos, y construcción de veredas de hormigón.</p>
+                            <a href="https://wa.me/5492954527994?text=Hola%20Rub%C3%A9n%2C%20necesito%20ayuda%20con%20unos%20trabajos%20de%20alba%C3%B1iler%C3%ADa%20en%20casa.%20%C2%BF%C2%BFQu%C3%A9%20presupuesto%20me%20hac%C3%A9s%3F" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="col service-item animate__animated animate__fadeInUp" data-delay="400">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-hover-effect">
+                        <div class="card-body">
+                            <div class="service-icon-container mb-3">
+                                <i class="fas fa-paint-roller fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Pintura en General</h5>
+                            <p class="card-text">Trabajos de pintura interior y exterior para renovar y proteger las superficies de tu hogar.</p>
+                            <a href="https://wa.me/5492954527994?text=Hola%20Rub%C3%A9n%2C%20quiero%20pintar%20mi%20casa%20y%20busco%20alguien%20de%20confianza.%20%C2%BFPodr%C3%ADas%20venir%20a%20cotizar%3F" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 5 -->
+                <div class="col service-item animate__animated animate__fadeInUp" data-delay="500">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-hover-effect">
+                        <div class="card-body">
+                            <div class="service-icon-container mb-3">
+                                <i class="fas fa-water fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Membranas y Filtraciones</h5>
+                            <p class="card-text">Aplicación y reparación de membranas para techos y terrazas, eliminando filtraciones y goteras.</p>
+                            <a href="https://wa.me/5492954527994?text=Hola%20Rub%C3%A9n%2C%20tengo%20goteras%20en%20el%20techo%20y%20no%20s%C3%A9%20c%C3%B3mo%20arreglarlo.%20%C2%BFUsted%20hace%20ese%20tipo%20de%20trabajos%3F" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 6 -->
+                <div class="col service-item animate__animated animate__fadeInUp" data-delay="600">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-hover-effect">
+                        <div class="card-body">
+                            <div class="service-icon-container mb-3">
+                                <i class="fas fa-road fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Veredas de Hormigón</h5>
+                            <p class="card-text">Construcción y reparación de veredas, garantizando un acabado sólido y duradero.</p>
+                            <a href="https://wa.me/5492954527994?text=Hola%20Rub%C3%A9n%2C%20necesito%20hacer%20una%20vereda%20en%20mi%20casa.%20%C2%BFQu%C3%A9%20tal%20el%20precio%20y%20disponibilidad%3F" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: ¿Por Qué Elegirme? (en primera persona) con parallax optimizado -->
+    <section id="porqueelegirnos" class="py-5 text-white parallax-section" style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold section-title animate__animated animate__fadeInDown">¿Por qué elegirme?</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4 h-100 bg-black bg-opacity-25 rounded shadow-sm">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-clock fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="fw-bold">Respuesta Rápida</h4>
+                        <p>Atiendo tu consulta en menos de 24 horas y programo visitas a la brevedad.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4 h-100 bg-black bg-opacity-25 rounded shadow-sm">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-award fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="fw-bold">18 Años de Experiencia</h4>
+                        <p>Amplia trayectoria en el rubro con trabajos realizados en toda Santa Rosa.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4 h-100 bg-black bg-opacity-25 rounded shadow-sm">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-handshake fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="fw-bold">Trabajo Garantizado</h4>
+                        <p>Todos mis trabajos cuentan con garantía escrita y seguimiento post-servicio.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4 h-100 bg-black bg-opacity-25 rounded shadow-sm">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-dollar-sign fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="fw-bold">Precios Transparentes</h4>
+                        <p>Presupuesto detallado sin cargo, sin costos ocultos y precios competitivos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="https://wa.me/5492954527994" target="_blank" class="btn btn-danger btn-lg custom-btn-zoom px-4 py-3">
+                    <i class="fab fa-whatsapp me-2"></i> Consultar Disponibilidad
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE TRABAJOS - CARRUSEL -->
+    <section id="galeria" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold section-title animate__animated animate__fadeInUp">Galería de Trabajos Realizados</h2>
+            <p class="text-center fs-5 mb-5">Un vistazo a algunos de mis proyectos más recientes. Navegá por las imágenes para ver la calidad de mi trabajo.</p>
+            
+            <div id="proyectosCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                
+                <div class="carousel-inner rounded shadow-lg">
+                    <!-- Slide 1 - Pintura -->
+                    <div class="carousel-item active">
+                        <img src="https://www.paratureforma.com/blog/wp-content/uploads/2025/05/pintura-exterior.jpg" class="d-block w-100 carousel-img" alt="Trabajo de pintura exterior">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-custom">
+                            <h5 class="fs-3 fw-bold">Pintura Exterior Completa</h5>
+                            <p class="fs-5">Renovación de fachada con productos de alta durabilidad y resistencia a la intemperie.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 - Albañilería -->
+                    <div class="carousel-item">
+                        <img src="https://conobra.protexargentina.com/wp-content/uploads/2021/12/Revoque-revokrete-1.jpg" class="d-block w-100 carousel-img" alt="Reparación de albañilería">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-custom">
+                            <h5 class="fs-3 fw-bold">Reparación de Pared y Revoque</h5>
+                            <p class="fs-5">Solución de humedad y reconstrucción completa de la pared afectada.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 - Vereda -->
+                    <div class="carousel-item">
+                        <img src="https://www.elmiercolesdigital.com.ar/wp-content/uploads/2020/12/vereda2.jpg" class="d-block w-100 carousel-img" alt="Construcción de vereda">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-custom">
+                            <h5 class="fs-3 fw-bold">Vereda de Hormigón</h5>
+                            <p class="fs-5">Construcción de vereda nueva con hormigón de alta resistencia y acabado liso.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 - Grifería -->
+                    <div class="carousel-item">
+                        <img src="https://www.sosasistencia.com/wp-content/uploads/2020/05/plomeria-instalacion-mezclador-lavamanos.jpg" class="d-block w-100 carousel-img" alt="Instalación de grifería moderna">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-custom">
+                            <h5 class="fs-3 fw-bold">Instalación de Grifería Moderna</h5>
+                            <p class="fs-5">Cambio completo del sistema de agua con materiales de primera calidad.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 5 - Techo/Membrana -->
+                    <div class="carousel-item">
+                        <img src="https://www.dimatech.com.ar/images/servicios/mca4.jpg" class="d-block w-100 carousel-img" alt="Aplicación de membrana en techo">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-custom">
+                            <h5 class="fs-3 fw-bold">Aplicación de Membrana en Techo</h5>
+                            <p class="fs-5">Protección total contra filtraciones con membrana líquida de alta adherencia.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 6 - Destapación -->
+                    <div class="carousel-item">
+                        <img src="https://www.shutterstock.com/image-photo/plumber-working-on-pipes-bathroom-260nw-2655224145.jpg" class="d-block w-100 carousel-img" alt="Trabajo de destapación de cañerías">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-custom">
+                            <h5 class="fs-3 fw-bold">Fontanería y Plomería</h5>
+                            <p class="fs-5">Solución rápida a obstrucciones en desagües principales con equipos especializados.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#proyectosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#proyectosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            
+            <div class="text-center mt-4">
+                <p class="text-muted"><small>Deslizá o usá los controles para ver más imágenes de mis trabajos realizados.</small></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold section-title animate__animated animate__fadeInUp">Mi Ubicación</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 animate__animated animate__fadeInLeft">
+                    <h4 class="fw-bold mb-3 text-danger">Santa Rosa, La Pampa</h4>
+                    <p class="fs-5">
+                        Rubén Peralta ofrece sus servicios de reparaciones y mantenimiento del hogar en toda la ciudad de <span class="fw-bold">Santa Rosa</span> y zonas aledañas en la Provincia de La Pampa.
+                    </p>
+                    <p class="fs-5">
+                        Si te encontrás en la zona, contactame para coordinar una visita y obtener tu presupuesto detallado sin cargo.
+                    </p>
+                    
+                    <div class="contact-info mt-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-phone-alt text-danger fa-2x me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">Teléfono Directo</h5>
+                                <p class="fs-5 mb-0">(2954) 52-7994</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-clock text-danger fa-2x me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">Horarios de Atención</h5>
+                                <p class="fs-5 mb-0">Lunes a Sábado: 8:00 - 20:00 hs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-map-marker-alt text-danger fa-2x me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">Zona de Cobertura</h5>
+                                <p class="fs-5 mb-0">Santa Rosa y alrededores</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/5492954527994?text=Hola%20Rub%C3%A9n%2C%20%C2%BFcu%C3%A1ndo%20tens%20disponibilidad%20para%20venir%20a%20mi%20casa%3F%20Necesito%20tu%20ayuda%20con%20unos%20arreglos." target="_blank" class="btn btn-danger btn-lg mt-4 custom-btn-zoom px-4">
+                        <i class="fas fa-calendar-alt me-2"></i> Coordinar Visita
+                    </a>
+                </div>
+                
+                <div class="col-lg-6 animate__animated animate__fadeInRight">
+                    <div class="map-responsive shadow-lg rounded overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199745.3945974012!2d-64.00977011985472!3d-36.60251142502695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c258d927a3c301%3A0x2d8a57367878d657!2sSanta%20Rosa%2C%20La%20Pampa!5e0!3m2!1ses!2sar!4v1610000000000!5m2!1ses!2sar" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (en primera persona) -->
+    <footer id="contacto" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="fw-bold mb-3">
+                        <i class="fas fa-tools me-2 text-danger"></i>Rubén <span class="text-danger">Peralta</span>
+                    </h4>
+                    <p class="mb-3">Soluciones integrales para tu hogar con 18 años de experiencia en Santa Rosa, La Pampa.</p>
+                    <div class="d-flex">
+                        <a href="https://www.instagram.com/rubenperalta2862?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white me-3 custom-social-icon-footer"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://wa.me/5492954527994" target="_blank" class="text-white custom-social-icon-footer"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none footer-link">Servicios</a></li>
+                        <li class="mb-2"><a href="#galeria" class="text-white text-decoration-none footer-link">Galería de Trabajos</a></li>
+                        <li class="mb-2"><a href="#ubicacion" class="text-white text-decoration-none footer-link">Ubicación</a></li>
+                        <li><a href="#contacto" class="text-white text-decoration-none footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Contacto Directo</h5>
+                    <p class="mb-2">
+                        <i class="fas fa-phone-alt text-danger me-2"></i>
+                        <strong>Teléfono:</strong> (2954) 52-7994
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                        <strong>Zona:</strong> Santa Rosa, La Pampa
+                    </p>
+                    <p class="mb-3">
+                        <i class="fas fa-clock text-danger me-2"></i>
+                        <strong>Horarios:</strong> Lunes a Sábado 8:00 - 20:00 hs
+                    </p>
+                    
+                    <a href="https://wa.me/5492954527994" target="_blank" class="btn btn-danger btn-sm custom-btn-zoom">
+                        <i class="fab fa-whatsapp me-1"></i> Escribime por WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-light">
+            
+            <div class="text-center">
+                <p class="mb-1">&copy; 2025 Rubén Peralta - Reparaciones del Hogar. Todos los derechos reservados.</p>
+                <p class="mt-2" style="font-size: 0.85em;">
+                    Desarrollado por <a href="https://www.kevin-luna-dev.com/" target="_blank" class="text-danger text-decoration-none fw-bold custom-developer-link">Kevin Luna</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/5492954527994?text=Hola%20Rub%C3%A9n%2C%20%C2%BFc%C3%B3mo%20est%C3%A1s%3F%20Tengo%20un%20peque%C3%B1o%20problema%20en%20mi%20casa%20y%20me%20gustar%C3%ADa%20consultarte.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" class="whatsapp-float shadow-lg" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
